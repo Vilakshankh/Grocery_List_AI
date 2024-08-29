@@ -7,15 +7,23 @@
 <body>
 
     <div class="centered-container">
-        
-        <form action="/action_page.php">
-            <div class="flex-container">
-                <div class="flex-item"><input type="text" id="frequest" name="frequest" placeholder="Tell me what you want to eat 🥖🥚🥝🍗🥛🍅"><br>
+        <div class="centered-item">
+            <h1>Meal Prepper</h1>
+            <form id="groceryForm">
+                <div class="flex-container">
+                    <div class="flex-item">
+                        <input type="text" id="userRequest" name="userRequest" placeholder="Tell me what you want to eat 🥖🥚🥝🍗🥛🍅"><br>
+                    </div>
+                    <div class="flex-item">
+                        <input type="submit" value="Go">
+                    </div>
                 </div>
-                <div class="flex-item"><input type="submit" value="Submit"></div>
-            </div>
-        </form>
+            </form>
+            <!-- Output area -->
+            <div id="output" class="output-container"></div>
+        </div>
     </div>
 
+    <script src="app.js"></script>
 </body>
 </html>
