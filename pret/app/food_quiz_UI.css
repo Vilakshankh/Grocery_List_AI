@@ -1,0 +1,39 @@
+.container {
+    padding: 20px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.button {
+    background-color: #000000;
+    padding: 15px 32px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    display: inline-block;
+    font-size: 13px;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+
+.button:hover {
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+
+.inputBox {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    
+}
+
