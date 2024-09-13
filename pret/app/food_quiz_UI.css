@@ -1,39 +1,62 @@
+/* Container takes full viewport height and arranges children vertically */
 .container {
-    padding: 20px;
-    justify-content: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 50%;
-}
-
-.button {
-    background-color: #000000;
-    padding: 15px 32px;
-    color: white;
-    background-color: black;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+  }
+  
+  /* Header section styles */
+  .input-section {
+    /* Optional: Fixed height for the header */
+    /* height: 100px; */
+  }
+  
+  .input-section h1 {
+    margin-bottom: 10px;
+    font-size: 24px;
     text-align: center;
-    display: inline-block;
-    font-size: 13px;
-    cursor: pointer;
-    border-radius: 5px;
-
-}
-
-
-.button:hover {
-    color: black;
-    background-color: white;
-    border: 2px solid black;
-    border-radius: 5px;
-}
-
-
-.inputBox {
+  }
+  
+  /* Input and button container */
+  .input-container {
+    display: flex;
+    gap: 10px;
+  }
+  
+  /* Make input take the remaining space */
+  .input-container input {
+    flex: 1;
+  }
+  
+  /* Messages section styles */
+  .messages-section {
+    flex: 1;
+    margin-top: 20px;
+    overflow-y: auto;
     padding: 10px;
-    margin: 10px;
-    border: 1px solid black;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  /* Individual message styles */
+  .message {
+    margin-bottom: 15px;
+    padding: 10px;
     border-radius: 5px;
-    
-}
-
+  }
+  
+  /* Differentiate AI and User messages */
+  .message.ai {
+    background-color: #e6f7ff;
+    align-self: flex-start;
+  }
+  
+  .message.user {
+    background-color: #f1f1f1;
+    align-self: flex-end;
+  }
+  
